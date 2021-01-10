@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="shippingModelStoreContainer" CdmEntityContainer="shippingEntities">
+    <EntitySetMapping Name="Admin">
+      <EntityTypeMapping TypeName="shippingModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Kullanici_Adi" ColumnName="Kullanici_Adi" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KargoBilgi">
+      <EntityTypeMapping TypeName="shippingModel.KargoBilgi">
+        <MappingFragment StoreEntitySet="KargoBilgi">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Barkod" ColumnName="Barkod" />
+          <ScalarProperty Name="Musteri_ID" ColumnName="Musteri_ID" />
+          <ScalarProperty Name="Alici_Ad" ColumnName="Alici_Ad" />
+          <ScalarProperty Name="Alici_Soyad" ColumnName="Alici_Soyad" />
+          <ScalarProperty Name="Alici_Tel" ColumnName="Alici_Tel" />
+          <ScalarProperty Name="Alici_Adres" ColumnName="Alici_Adres" />
+          <ScalarProperty Name="Gonderim_Tarih" ColumnName="Gonderim_Tarih" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+          <ScalarProperty Name="Icerik" ColumnName="Icerik" />
+          <ScalarProperty Name="Hassaslik" ColumnName="Hassaslik" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Musteri">
+      <EntityTypeMapping TypeName="shippingModel.Musteri">
+        <MappingFragment StoreEntitySet="Musteri">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
